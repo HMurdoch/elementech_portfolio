@@ -177,11 +177,11 @@ function ProjectDetail({ project, onBack }: { project: any; onBack: ()=>void }) 
         <div className={`shadow-[0_0_25px_rgba(239,68,68,0.45)] ${panel} lg:col-span-2`}>
           <BrowserView url={project.homepageUrl} />
         </div>
-        <div className={`shadow-[0_0_25px_rgba(239,68,68,0.45)] ${panel} lg:col-span-1`}>
-          <CodeViewer node={openFile} />
-        </div>
+          <div className={`shadow-[0_0_25px_rgba(239,68,68,0.45)] ${panel} lg:col-span-1`}>
+              <ScreenshotGallery shots={project.screenshots} />
+          </div>
         <div className={`shadow-[0_0_25px_rgba(239,68,68,0.45)] ${panel} lg:col-span-2`}>
-          <ScreenshotGallery shots={project.screenshots} />
+          <CodeViewer node={openFile} />
         </div>
       </div>
     </div>
