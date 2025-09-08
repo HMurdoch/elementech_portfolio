@@ -1,4 +1,9 @@
-export type FileNode = { type: 'folder'|'file'; name: string; path: string; language?: string; code?: string; children?: FileNode[] }
+import screenshot01 from '../images/vanilla_js/screenshot01.png'; 
+import screenshot02 from '../images/vanilla_js/screenshot02.png'; 
+import screenshot03 from '../images/vanilla_js/screenshot03.png';
+
+
+export type FileNode = { type: 'folder' | 'file'; name: string; path: string; language?: string; code?: string; children?: FileNode[] }
 export type Project = { id: string; title: string; description?: string; homepageUrl: string; repoUrl?: string; tech: string[]; tags?: string[]; files: FileNode[]; screenshots: {id: string; src: string; caption?: string}[] }
 
 const SAMPLE_CODE = `import React from 'react';
@@ -131,9 +136,9 @@ export const PROJECTS: Record<string, Project> = {
             { type: 'file', name: 'styles.css', path: 'src/data/technologies/vanilla_js/styles.css', language: 'css', code: TECHNOLOGY_VANILLA_JS_STYLES_CSS },
         ],
         screenshots: [
-            { id: 's1', src: 'images/vanilla_js/screenshot01.png', caption: 'Tab 1' },
-            { id: 's2', src: 'images/vanilla_js/screenshot02.png', caption: 'Tab 2' },
-            { id: 's2', src: 'images/vanilla_js/screenshot03.png', caption: 'Tab 3' },
+            { id: 's1', src: { screenshot01 }, caption: 'Tab 1' },
+            { id: 's2', src: { screenshot02 }, caption: 'Tab 2' },
+            { id: 's2', src: { screenshot03 }, caption: 'Tab 3' },
         ]
     },
 }
