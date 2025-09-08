@@ -82,8 +82,9 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
-
+dist/*
+!dist/images/
+!dist/images/**
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
@@ -220,7 +221,6 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/
