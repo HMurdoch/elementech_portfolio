@@ -1,6 +1,6 @@
-import screenshot01 from '/images/vanilla_js/screenshot01.png'; 
-import screenshot02 from '/images/vanilla_js/screenshot02.png'; 
-import screenshot03 from '/images/vanilla_js/screenshot03.png';
+import screenshot01 from './images/vanilla_js/screenshot01.png'; 
+import screenshot02 from './images/vanilla_js/screenshot02.png'; 
+import screenshot03 from './images/vanilla_js/screenshot03.png';
 
 
 export type FileNode = { type: 'folder' | 'file'; name: string; path: string; language?: string; code?: string; children?: FileNode[] }
