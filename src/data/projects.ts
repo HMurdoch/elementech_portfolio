@@ -131,9 +131,9 @@ export const PROJECTS: Record<string, Project> = {
             { type: 'file', name: 'styles.css', path: 'src/data/technologies/vanilla_js/styles.css', language: 'css', code: TECHNOLOGY_VANILLA_JS_STYLES_CSS },
         ],
         screenshots: [
-            { id: 's1', src: 'src/images/vanilla_js/screenshot01.png', caption: 'Tab 1' },
-            { id: 's2', src: 'src/images/vanilla_js/screenshot02.png', caption: 'Tab 2' },
-            { id: 's2', src: 'src/images/vanilla_js/screenshot03.png', caption: 'Tab 3' },
+            { id: 's1', src: 'images/vanilla_js/screenshot01.png', caption: 'Tab 1' },
+            { id: 's2', src: 'images/vanilla_js/screenshot02.png', caption: 'Tab 2' },
+            { id: 's2', src: 'images/vanilla_js/screenshot03.png', caption: 'Tab 3' },
         ]
     },
 }
