@@ -105,15 +105,46 @@ export const PROJECTS: Record<string, Project> = {
           { type: 'file', name: 'styles.css', path: 'src/data/technologies/vanilla_js/styles.css', language: 'css', code: TECHNOLOGY_VANILLA_JS_STYLES_CSS },
       ],
       screenshots: [
-          { id: 's1', src: 'src/images/vanilla_js/screenshot01.png', caption: 'Tab 1' },
-          { id: 's2', src: 'src/images/vanilla_js/screenshot02.png', caption: 'Tab 2' },
-          { id: 's2', src: 'src/images/vanilla_js/screenshot03.png', caption: 'Tab 3' },
+          { id: 's1', src: screenshot01, caption: 'Tab 1' },
+          { id: 's2', src: screenshot02, caption: 'Tab 2' },
+          { id: 's2', src: screenshot03, caption: 'Tab 3' },
       ]
     },
     technologyReactJS: {
         id: 'technologyReactJS',
-        title: 'Vanilla JS',
-        description: 'Sample overview of Vanilla Javascript',
+        title: 'React JS',
+        description: 'Sample overview of React Javascript',
+        homepageUrl: 'https://elementech-technology-vanilla-js.onrender.com/',
+        repoUrl: 'https://github.com/HMurdoch/elementech-technology-vanilla_js/tree/master',
+        tech: ['React', 'Node', 'Javascript'],
+        tags: ['FinTech', 'Microservices'],
+        files: [
+            {
+                type: 'folder', name: 'vanilla_js', path: 'src/data/technologies/vanilla_js', children: [
+                    {
+                        type: 'folder', name: 'src', path: 'src/data/technologies/vanilla_js/src', children: [
+                            { type: 'file', name: 'counter.js', path: 'src/data/technologies/vanilla_js/src/counter.js', language: 'js', code: TECHNOLOGY_VANILLA_JS_SRC_COUNTER_JS },
+                            { type: 'file', name: 'main.js', path: 'src/data/technologies/vanilla_js/src/main.js', language: 'js', code: TECHNOLOGY_VANILLA_JS_SRC_MAIN_JS },
+                            { type: 'file', name: 'style.css', path: 'src/data/technologies/vanilla_js/src/styles.css', language: 'css', code: TECHNOLOGY_VANILLA_JS_SRC_STYLE_CSS },
+                        ]
+                    }
+                ]
+            },
+            { type: 'file', name: 'index.html', path: 'src/data/technologies/vanilla_js/index.html', language: 'html', code: TECHNOLOGY_VANILLA_JS_INDEX_HTML },
+            { type: 'file', name: 'index.js', path: 'src/data/technologies/vanilla_js/index.js', language: 'js', code: TECHNOLOGY_VANILLA_JS_INDEX_JS },
+            { type: 'file', name: 'package.json', path: 'src/data/technologies/vanilla_js/package.json', language: 'json', code: TECHNOLOGY_VANILLA_JS_PACKAGE_JSON },
+            { type: 'file', name: 'styles.css', path: 'src/data/technologies/vanilla_js/styles.css', language: 'css', code: TECHNOLOGY_VANILLA_JS_STYLES_CSS },
+        ],
+        screenshots: [
+            { id: 's1', src: { screenshot01 }, caption: 'Tab 1' },
+            { id: 's2', src: { screenshot02 }, caption: 'Tab 2' },
+            { id: 's2', src: { screenshot03 }, caption: 'Tab 3' },
+        ]
+    },
+    technologyReactEssentials: {
+        id: 'technologyReactJS',
+        title: 'React JS',
+        description: 'Sample overview of React Javascript',
         homepageUrl: 'https://elementech-technology-vanilla-js.onrender.com/',
         repoUrl: 'https://github.com/HMurdoch/elementech-technology-vanilla_js/tree/master',
         tech: ['React', 'Node', 'Javascript'],
@@ -147,7 +178,8 @@ export const TECHNOLOGIES = [
 //  { label: 'React + Azure Banking Portal', projectId: 'demoBank' },
 //  { label: 'React + Node E‑Commerce', projectId: 'demoEcom' },
     { label: 'Vanilla JS Example', projectId: 'technologyVanillaJS' },
-    { label: 'React JS Example', projectId: 'technologyReactJS' }
+    { label: 'React JS Example', projectId: 'technologyReactJS' },
+    { label: 'React Essentials', projectId: 'technologyReactEssentials' }
 ];
 
 export const COURSES = [
