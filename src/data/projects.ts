@@ -1,6 +1,6 @@
-import screenshot01 from '../images/vanilla_js/screenshot01.png'; 
-import screenshot02 from '../images/vanilla_js/screenshot02.png'; 
-import screenshot03 from '../images/vanilla_js/screenshot03.png';
+import vanilla_js_screenshot01 from '../images/vanilla_js/screenshot01.png'; 
+import vanilla_js_screenshot02 from '../images/vanilla_js/screenshot02.png'; 
+import vanilla_js_screenshot03 from '../images/vanilla_js/screenshot03.png';
 
 
 export type FileNode = { type: 'folder' | 'file'; name: string; path: string; language?: string; code?: string; children?: FileNode[] }
@@ -105,27 +105,27 @@ export const PROJECTS: Record<string, Project> = {
           { type: 'file', name: 'styles.css', path: 'src/data/technologies/vanilla_js/styles.css', language: 'css', code: TECHNOLOGY_VANILLA_JS_STYLES_CSS },
       ],
       screenshots: [
-          { id: 's1', src: screenshot01, caption: 'Tab 1' },
-          { id: 's2', src: screenshot02, caption: 'Tab 2' },
-          { id: 's2', src: screenshot03, caption: 'Tab 3' },
+          { id: 's1', src: vanilla_js_screenshot01, caption: 'Tab 1' },
+          { id: 's2', src: vanilla_js_screenshot02, caption: 'Tab 2' },
+          { id: 's2', src: vanilla_js_screenshot03, caption: 'Tab 3' },
       ]
     },
     technologyReactJS: {
         id: 'technologyReactJS',
         title: 'React JS',
         description: 'Sample overview of React Javascript',
-        homepageUrl: 'https://elementech-technology-vanilla-js.onrender.com/',
-        repoUrl: 'https://github.com/HMurdoch/elementech-technology-vanilla_js/tree/master',
+        homepageUrl: 'https://elementech-technology-react-js.onrender.com',
+        repoUrl: 'https://github.com/HMurdoch/elementech-technology-react_js/tree/master',
         tech: ['React', 'Node', 'Javascript'],
         tags: ['FinTech', 'Microservices'],
         files: [
             {
-                type: 'folder', name: 'vanilla_js', path: 'src/data/technologies/vanilla_js', children: [
+                type: 'folder', name: 'react_js', path: 'src/data/technologies/react_js', children: [
                     {
-                        type: 'folder', name: 'src', path: 'src/data/technologies/vanilla_js/src', children: [
-                            { type: 'file', name: 'counter.js', path: 'src/data/technologies/vanilla_js/src/counter.js', language: 'js', code: TECHNOLOGY_VANILLA_JS_SRC_COUNTER_JS },
-                            { type: 'file', name: 'main.js', path: 'src/data/technologies/vanilla_js/src/main.js', language: 'js', code: TECHNOLOGY_VANILLA_JS_SRC_MAIN_JS },
-                            { type: 'file', name: 'style.css', path: 'src/data/technologies/vanilla_js/src/styles.css', language: 'css', code: TECHNOLOGY_VANILLA_JS_SRC_STYLE_CSS },
+                        type: 'folder', name: 'src', path: 'src/data/technologies/react_js/src', children: [
+                            { type: 'file', name: 'counter.js', path: 'src/data/technologies/react_js/src/App.js', language: 'js', code: TECHNOLOGY_VANILLA_JS_SRC_COUNTER_JS },
+                            { type: 'file', name: 'main.js', path: 'src/data/technologies/react_js/src/index.js', language: 'js', code: TECHNOLOGY_VANILLA_JS_SRC_MAIN_JS },
+                            { type: 'file', name: 'style.css', path: 'src/data/technologies/react_js/src/styles.css', language: 'css', code: TECHNOLOGY_VANILLA_JS_SRC_STYLE_CSS },
                         ]
                     }
                 ]
@@ -136,17 +136,17 @@ export const PROJECTS: Record<string, Project> = {
             { type: 'file', name: 'styles.css', path: 'src/data/technologies/vanilla_js/styles.css', language: 'css', code: TECHNOLOGY_VANILLA_JS_STYLES_CSS },
         ],
         screenshots: [
-            { id: 's1', src: { screenshot01 }, caption: 'Tab 1' },
-            { id: 's2', src: { screenshot02 }, caption: 'Tab 2' },
-            { id: 's2', src: { screenshot03 }, caption: 'Tab 3' },
+            { id: 's1', src: vanilla_js_screenshot01, caption: 'Tab 1' },
+            { id: 's2', src: vanilla_js_screenshot02, caption: 'Tab 2' },
+            { id: 's2', src: vanilla_js_screenshot03, caption: 'Tab 3' },
         ]
     },
     technologyReactEssentials: {
         id: 'technologyReactJS',
         title: 'React JS',
         description: 'Sample overview of React Javascript',
-        homepageUrl: 'https://elementech-technology-vanilla-js.onrender.com/',
-        repoUrl: 'https://github.com/HMurdoch/elementech-technology-vanilla_js/tree/master',
+        homepageUrl: 'https://elementech-technology-react-js.onrender.com/',
+        repoUrl: 'https://github.com/HMurdoch/elementech-technology-react_js/tree/master',
         tech: ['React', 'Node', 'Javascript'],
         tags: ['FinTech', 'Microservices'],
         files: [
@@ -167,9 +167,9 @@ export const PROJECTS: Record<string, Project> = {
             { type: 'file', name: 'styles.css', path: 'src/data/technologies/vanilla_js/styles.css', language: 'css', code: TECHNOLOGY_VANILLA_JS_STYLES_CSS },
         ],
         screenshots: [
-            { id: 's1', src: { screenshot01 }, caption: 'Tab 1' },
-            { id: 's2', src: { screenshot02 }, caption: 'Tab 2' },
-            { id: 's2', src: { screenshot03 }, caption: 'Tab 3' },
+            { id: 's1', src: { vanilla_js_screenshot01 }, caption: 'Tab 1' },
+            { id: 's2', src: { vanilla_js_screenshot02 }, caption: 'Tab 2' },
+            { id: 's2', src: { vanilla_js_screenshot03 }, caption: 'Tab 3' },
         ]
     },
 }
